@@ -59,7 +59,7 @@ class _GameScreenState extends State<GameScreen> {
         yourSelect = 1;
         select = false;
 
-        _controller.restart(duration: 5);
+        _controller.restart(duration: 15);
       });
     }
   }
@@ -141,7 +141,7 @@ class _GameScreenState extends State<GameScreen> {
                   height: 30,
                 ),
                 CircularCountDownTimer(
-                  duration: 5,
+                  duration: 15,
                   initialDuration: 0,
                   controller: _controller,
                   ringColor: Colors.white,
