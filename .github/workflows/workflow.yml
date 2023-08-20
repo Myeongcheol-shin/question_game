@@ -45,7 +45,7 @@ jobs:
           git config --global user.name shino72
           git status
           # 5. change your repository
-          git remote add origin https://github.com/Myeongcheol-shin/question_game
+          git remote add origin https://github.com/Myeongcheol-shin/question_game.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
