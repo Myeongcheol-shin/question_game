@@ -1,6 +1,5 @@
-<img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=Flutter&logoColor=white"/> <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=Dart&logoColor=white"/>  <img src="https://img.shields.io/badge/ios-000000?style=flat-square&logo=ios&logoColor=white"/> <img src="https://img.shields.io/badge/googlechrome-4285F4?style=flat-square&logo=googlechrome&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=Flutter&logoColor=white"/> <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=Dart&logoColor=white"/>  <img src="https://img.shields.io/badge/ios-000000?style=flat-square&logo=ios&logoColor=white"/> <img src="https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=googlechrome&logoColor=white"/>
 
-googlechrome
 
 
 # trivia quiz Application (상식 퀴즈 앱)
