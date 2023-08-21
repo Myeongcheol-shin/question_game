@@ -1,6 +1,9 @@
 # trivia quiz Application (상식 퀴즈 앱)
 플러터로 제작한 상식 퀴즈 앱입니다.
 
+## Play Link
+https://myeongcheol-shin.github.io/web/
+
 ## 참고 자료
 ### OPEN TRIVIA OPENDATABASE - QUIZ API
 **상식 퀴즈 API의 경우 "OPEN TRIVIA OPENDATABASE"의 "Quiz API"를 사용.**  
