@@ -10,6 +10,7 @@ import 'package:question_game/screen/ending/ending.dart';
 import 'package:question_game/service/api_service.dart';
 import 'package:html_unescape/html_unescape.dart';
 import 'package:get/get.dart';
+import 'dart:html' as html;
 
 class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
@@ -60,7 +61,7 @@ class _GameScreenState extends State<GameScreen> {
         yourSelect = 1;
         select = false;
 
-        _controller.restart(duration: 15);
+        _controller.restart(duration: 30);
       });
     }
   }
@@ -142,7 +143,7 @@ class _GameScreenState extends State<GameScreen> {
                   height: 30,
                 ),
                 CircularCountDownTimer(
-                  duration: 15,
+                  duration: 30,
                   initialDuration: 0,
                   controller: _controller,
                   ringColor: Colors.white,
@@ -190,7 +191,11 @@ class _GameScreenState extends State<GameScreen> {
                   shrinkWrap: true,
                   padding: const EdgeInsets.all(5),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      childAspectRatio: GetPlatform.isWeb ? (5 / 1) : (5 / 3),
+                      childAspectRatio: GetPlatform.isWeb
+                          ? html.window.navigator.userAgent.contains('Mobile')
+                              ? (5 / 3)
+                              : (5 / 1)
+                          : (5 / 3),
                       crossAxisCount: 2),
                   itemCount: nowQuestion.length,
                   itemBuilder: (context, index) {
