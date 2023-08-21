@@ -11,6 +11,7 @@ import 'package:question_game/service/api_service.dart';
 import 'package:html_unescape/html_unescape.dart';
 import 'package:get/get.dart';
 import 'dart:html' as html;
+import 'package:auto_size_text/auto_size_text.dart';
 
 class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
@@ -136,11 +137,11 @@ class _GameScreenState extends State<GameScreen> {
                     unescape.convert(question_content),
                     textAlign: TextAlign.center,
                     style: const TextStyle(
-                        fontSize: 25, fontWeight: FontWeight.bold),
+                        fontSize: 22, fontWeight: FontWeight.bold),
                   ),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 CircularCountDownTimer(
                   duration: 30,
@@ -193,9 +194,9 @@ class _GameScreenState extends State<GameScreen> {
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       childAspectRatio: GetPlatform.isWeb
                           ? html.window.navigator.userAgent.contains('Mobile')
-                              ? (5 / 3)
+                              ? (5 / 2)
                               : (5 / 1)
-                          : (5 / 3),
+                          : (5 / 2),
                       crossAxisCount: 2),
                   itemCount: nowQuestion.length,
                   itemBuilder: (context, index) {
@@ -237,7 +238,7 @@ class _GameScreenState extends State<GameScreen> {
                                   borderRadius: BorderRadius.circular(10),
                                   color: Colors.white),
                           child: Center(
-                            child: Text(
+                            child: AutoSizeText(
                               unescape.convert(nowQuestion[index]),
                               style: const TextStyle(
                                   fontSize: 16,
